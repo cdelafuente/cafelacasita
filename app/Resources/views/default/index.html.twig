@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+  <style>
+    body {
+      margin: 0;
+    }
+
+    #main {
+      width: 100%;
+      height: 100vh;
+      background: url('img/background.jpg');
+      background-repeat: y-repeat;
+      background-position: center;
+      background-size: 100%;
+    }
+
+    .logo {
+      display: inline-block;
+      background: url('img/logo.svg');
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position: center;
+      width: 350px;
+      height: 250px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+    }
+  </style>
+{% endblock %}
+
+{% block body %}
+  <section id="main">
+    <span class="logo"></span>
+  </section>
+{% endblock %}
+
