@@ -10,9 +10,11 @@
       width: 100%;
       height: 100vh;
       background: url('img/background.jpg');
-      background-repeat: y-repeat;
+      background-repeat-y: repeat;
       background-position: center;
       background-size: 100%;
+      position: relative;
+      overflow: hidden;
     }
 
     .logo {
@@ -21,12 +23,97 @@
       background-repeat: no-repeat;
       background-size: 100%;
       background-position: center;
-      width: 350px;
-      height: 250px;
+      width: 525px;
+      height: 395px;
       position: absolute;
       top: 50%;
       left: 50%;
-      transform: translateX(-50%) translateY(-50%);
+      transform: translateX(-50%) translateY(-75%);
+    }
+    
+    .fruit-salad {
+      display: inline-block;
+      background: url('img/dish_01.png');
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position: bottom right;
+      width: 34.1796875%;
+      height: 45.5729166667%;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      transform: translateX(-18.3333%) translateY(-18.3333%);
+    }
+
+    .salad {
+      display: inline-block;
+      background: url('img/dish_06.png');
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position: bottom left;
+      width: 34.1796875%;
+      height: 45.5729166667%;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      transform: translateX(20.5%) translateY(-25.5%);
+    }
+
+    .waffles {
+      display: inline-block;
+      background: url('img/dish_02.png');
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position: top right;
+      width: 34.1796875%;
+      height: 45.5729166667%;
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+      transform: translateX(-18.3333%) translateY(18.3333%);
+    }
+
+    .tacos {
+      display: inline-block;
+      background: url('img/dish_05.png');
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position: top left;
+      width: 34.1796875%;
+      height: 45.5729166667%;
+      position: absolute;
+      bottom: 0px;
+      right: 0px;
+      transform: translateX(31.25%) translateY(13.75%);
+    }
+    
+    .pancakes {
+      display: inline-block;
+      background: url('img/dish_03.png');
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position: center;
+      width: 300px;
+      height: 225px;
+      position: absolute;
+      /*bottom: -55px;
+      right: 50%;*/
+      bottom: -55px;
+      right: 50%;
+    }
+
+    .smoothie {
+      display: inline-block;
+      background: url('img/dish_04.png');
+      background-repeat: no-repeat;
+      background-size: 80%;
+      background-position: center;
+      width: 250px;
+      height: 265px;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(20%) translateY(27.6595744681%);
     }
   </style>
 {% endblock %}
@@ -34,6 +121,12 @@
 {% block body %}
   <section id="main">
     <span class="logo"></span>
+    <span class="fruit-salad"></span>
+    <span class="salad"></span>
+    <span class="waffles"></span>
+    <span class="tacos"></span>
+    <span class="pancakes"></span>
+    <span class="smoothie"></span>
   </section>
 {% endblock %}
 
