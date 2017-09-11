@@ -1,0 +1,12 @@
+{
+  "name": "cafelacasita",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cdelafuente/cafelacasita"
+  },
+  "homepage": "http://www.cafelacasita.com",
+  "devDependencies": {
+    "node-sass": "^4.5.3"
+  }
+}
